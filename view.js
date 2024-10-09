@@ -1,11 +1,15 @@
 const getProduct =  (product) => {
     return `
-    <div class="prduct">
-    <h2>${product.title}</h2>
-    <p>${product.price}</p>
+    <div class="card">
+    <div class="card-header">${product.title}</div>
+
+    <div class="card-footer">
+    <div class="price">${product.price}</div>
+    </div>
     </div>
     `
 }
+
 
 const renderProducts = (products) =>{
     let productStr = ``;
