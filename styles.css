@@ -1,19 +1,29 @@
+/* עיצוב כללי */
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
 
+/* קונטיינר כללי המחלק את הדף לשני חלקים */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* חלק שמאל (1fr) לתוכן, חלק ימין (200px) ל-sidebar */
+    grid-gap: 20px; /* רווח בין שני החלקים */
+    padding: 20px;
+}
+
+/* תצוגת המוצרים */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* עיצוב המוצרים ב-grid */
     gap: 20px;
     padding: 20px;
+   
 }
 
 .card-header {
@@ -64,6 +74,49 @@ body {
     background-color: #ccc;
 }
 
-.add-to-cart:active {
-    background-color: #bbb;
+/* עיצוב של ה-sidebar */
+.sidebar {
+    position: sticky; /* גורם ל-sidebar להיות קבוע בגלילה */
+    top: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #00BFFF); /* מעבר צבעים */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* אפקט גדילה קל */
+}
+
+.sidebar ul li a.active {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0056b3;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
