@@ -41,3 +41,8 @@ body {
     color: #a800c9;
     font-weight: bold;
 }
+
+.sidebar ul li a.active {
+    font-weight: bold;
+    color: #007BFF;
+  }
