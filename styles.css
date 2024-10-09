@@ -9,18 +9,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* קונטיינר כללי המחלק את הדף לשני חלקים */
 .container {
     display: grid;
-    grid-template-columns: 1fr 200px; /* חלק שמאל (1fr) לתוכן, חלק ימין (200px) ל-sidebar */
-    grid-gap: 20px; /* רווח בין שני החלקים */
+    grid-template-columns: 1fr 200px; 
+    grid-gap: 20px;
     padding: 20px;
 }
 
-/* תצוגת המוצרים */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* עיצוב המוצרים ב-grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
    
@@ -29,9 +27,10 @@ body {
 .card-header {
     background-color: #fafafa;
     padding: 15px;
-    font-size: 17px;
+    font-size: 15px;
+    height: 5vw;
     font-weight: bold;
-    color: #555;
+    color: #a800c9;
     border-bottom: 1px solid #eee;
     text-align: center;
 }
@@ -39,9 +38,9 @@ body {
 .card-image img {
     width: 100%;
     height: 180px;
-    object-fit: contain; /* שומר על יחס תמונה */
+    object-fit: contain; 
     padding: 15px;
-    background-color: #f8f8f8;
+    background-color: white;
     border-bottom: 1px solid #eee;
 }
 
@@ -62,6 +61,7 @@ body {
 
 .add-to-cart {
     padding: 10px 15px;
+    
     background-color: #e0e0e0;
     border: none;
     border-radius: 5px;
@@ -75,6 +75,7 @@ body {
 }
 
 .sidebar {
+    position: sticky; 
     position: sticky; 
     top: 0;
     height: 100vh; 
