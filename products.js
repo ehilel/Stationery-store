@@ -391,6 +391,6 @@ const craft = [
         catalogId: 81,
         title: "מארז 4 סוללות AA",
         price: 9.90,
-        image: "/imgs/elec/02.webp",
+        image: "/imgs/craft/02.webp",
     },
 ]
