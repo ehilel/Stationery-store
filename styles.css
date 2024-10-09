@@ -74,49 +74,42 @@ body {
     background-color: #ccc;
 }
 
-/* עיצוב של ה-sidebar */
 .sidebar {
-    position: sticky; /* גורם ל-sidebar להיות קבוע בגלילה */
+    position: sticky; 
     top: 0;
-    height: 100vh;
-    background: linear-gradient(135deg, #007BFF, #00BFFF); /* מעבר צבעים */
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: right;
+    height: 100vh; 
+    background: white; 
+    padding: 20px; 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column; 
 }
 
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
+    list-style-type: none; 
+    padding: 0; 
+    width: 100%; 
 }
 
 .sidebar ul li {
-    margin: 20px 0;
+    margin: 10px 0; 
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    padding: 12px 18px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; 
+    font-size: 18px; 
+    color: #747e88; 
+    display: block; 
+    padding: 12px 18px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
 }
 
 .sidebar ul li a:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* אפקט גדילה קל */
+    background-color: #e0e0e0; 
 }
 
 .sidebar ul li a.active {
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #0056b3;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    font-weight: bold; 
+    color: white; 
+    background-color: #007BFF; 
 }
