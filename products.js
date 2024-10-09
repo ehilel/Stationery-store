@@ -1,4 +1,4 @@
-export const notebooks = [
+const notebooks = [
     {
         catalogId: 82,
         title: "ספירלה 2 נושא שורות - 1יח",
@@ -120,7 +120,7 @@ export const notebooks = [
     },
 ]
 
-export const craft = [
+const craft = [
     {
         catalogId: 86,
         title: "מארז תיכוניסטים/יות",
