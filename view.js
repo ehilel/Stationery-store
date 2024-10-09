@@ -5,7 +5,7 @@ const getProduct =  (product) => {
     <div class="card-image"><img src=${product.image} alt="Product presentation"></div>
     <div class="card-footer">
     <div class="price">${product.price}</div>
-     <button class="add-to-cart">הוספה לסל</button>
+    <button class="add-to-cart">הוספה לסל<i class="fas fa-shopping-cart"></i></button>
     </div>
     </div>
     `
