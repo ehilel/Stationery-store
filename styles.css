@@ -8,11 +8,13 @@ body {
     padding: 0;
 }
 
+
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+   
 }
 
 .card-header {
@@ -31,7 +33,8 @@ body {
 
 .card-footer {
     display: flex;
-    justify-content: center; /* שינוי לכיוון מרכז */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     background-color: #ffffff;
 }
@@ -40,6 +43,19 @@ body {
     font-size: 18px;
     color: #a800c9;
     font-weight: bold;
+}
+
+.add-to-cart {
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.add-to-cart:hover {
+    background-color: #ccc;
 }
 
 .sidebar ul li a.active {
